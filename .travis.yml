@@ -1,5 +1,10 @@
 language: c
+
 install:
     - make 
+
 script:
     - "./hello"
+
+after_failure:
+    - email
